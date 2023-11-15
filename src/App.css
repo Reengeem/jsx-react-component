@@ -1,0 +1,20 @@
+Let’s go back to JSX so we can apply logical operators in a real-life scenario.
+The form in this example only shows up when the firstName is empty.
+
+const firstName = prompt("type your first name");
+
+ function App() {
+   return (
+     <div>
+       <p> Hello {firstName || "Anonymous"} </p>
+       <p> It looks like you {firstName ? "have" : "don’t have"} a name</p>
+       {!firstName && (
+         <form>
+           <p> Type your name here </p>
+           <input type="text" />
+         </form>
+         
+       )}
+     </div>
+   );
+ }
