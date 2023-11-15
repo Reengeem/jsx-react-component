@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,8 +11,6 @@ import Stack from "react-bootstrap/Stack";
 const firstName = prompt("Enter You Name").trim();
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="container justify-content-center">
